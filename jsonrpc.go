@@ -124,6 +124,9 @@ type RPCClient interface {
 //
 // JSONRPC: must always be set to "2.0" for JSON-RPC version 2.0
 //
+// Auth: can be nil. if not must be a string representing an authentication
+// token <- sidenote: this is not in the spec, but zabbix is zabbix
+//
 // See: http://www.jsonrpc.org/specification#request_object
 //
 // Most of the time you shouldn't create the RPCRequest object yourself.
