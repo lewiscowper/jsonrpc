@@ -155,6 +155,7 @@ type RPCRequest struct {
 	Params  interface{} `json:"params,omitempty"`
 	ID      int         `json:"id"`
 	JSONRPC string      `json:"jsonrpc"`
+	Auth    string      `json:"auth,omitempty"`
 }
 
 // NewRequest returns a new RPCRequest that can be created using the same convenient parameter syntax as Call()
